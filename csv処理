@@ -1,0 +1,12 @@
+# csv
+with open('a.csv','r') as f:
+  data = f.read()
+  
+ data = data.split('\n')
+ print(data)
+ 
+ data = [s.replace('\"','') for s in data]
+ print(data)
+ 
+ for x in data:
+  print(x)
